@@ -29,14 +29,14 @@ The Inventory Management Web Application is a Python-based web application built
 
 2. Install the required dependencies.
 
-  ```bash
+  bash
   pip install -r requirements.txt
 
 3. Configure the database connection in config.py.
 
 4. Run the application.
 
-  ```bash
+  bash
   python app.py
 
 5. Access the web application in your browser at http://localhost:8050.
