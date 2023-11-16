@@ -6,5 +6,4 @@ Created on Thu Nov 16 21:10:10 2023
 @author: patricksydow
 """
 
-# do anything here.
-# It will be recorded on GHDesktop.
+# FUCK you Kevin.
