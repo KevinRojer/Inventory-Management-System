@@ -19,18 +19,29 @@ import config
 
 app.layout = dbc.Container([
     # Nav bar
-    html.Div([], id="nav-bar"),
+    html.Nav(
+        children=[
+            html.Div([
+                html.A('Home', href='/'),
+                html.A('About', href='/about'),
+                html.A('Contact', href='/contact')
+            ], className='nav-links'),
+        ],
+        id="nav-bar",
+        className='navbar'
+    ),
     
     # Dynamic Page content
     dcc.Location(id='url', refresh=True),
     html.Div(id="page-content"),
     
     # Footer
-    html.Dic([], id="footer-content"),
+    html.Div([], id="footer-content"),
     ])
 
-@callback(Output('page-content', 'children'),
+@app.callback(Output('page-content', 'children'),
           [Input('url', 'pathname')])
+
 def display_page(pathname):
     # Redirect to login page if not logged in
     if pathname == '/login' or pathname == '/':
@@ -40,3 +51,6 @@ def display_page(pathname):
         # This can be your home page or other content pages
         # e.g., return home_layout if pathname == '/home'
         pass
+    
+if __name__ == '__main__':
+    app.run_server(debug=True)
