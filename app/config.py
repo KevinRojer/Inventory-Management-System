@@ -13,12 +13,6 @@ Created on Thu Nov 30 20:32:55 2023
 APP_TITLE = "Inventory Management System"
 APP_DESCRIPTION = "Manage staff, reviews, and analytics."
 
-# # Dashly app layout
-# APP_LAYOUT = {
-#     "title": APP_TITLE,
-#     "meta_tags": [{"name": "description", "content": APP_DESCRIPTION}],
-# }
-
 # Stylesheets
 APP_STYLE = "/assets/style.css"
 FA_STYLE = "https://use.fontawesome.com/releases/v6.4.2/css/all.css"
@@ -32,7 +26,7 @@ PORT = 8050  # Choose an appropriate port
 DATABASE_URI = "mysql://username:password@localhost:5432/staff_db"
 
 # Secret key for session management (change in production)
-SECRET_KEY = "your-secret-key"
+SECRET_KEY = "KR3$Fli#wr#vbb213W@Q#ekf3T"
 
 # User roles
 ROLES = {"admin", "manager", "employee"}
@@ -65,6 +59,10 @@ SECURITY_PASSWORD_SALT = "your-password-salt"
 # ...
 
 # Asset specific configuration
-PP_LOGO_SVG = r"\assets\pp_logo_svg.svg"
+LOGO_SVG = r"/assets/BodegasPapiamento_logo.svg"
 
 # You can define functions or classes to read configuration from environment variables or files
+users = {
+    "kevin": "admin",
+    "patrick": "maxi",
+    "keath": "chupapi"}
